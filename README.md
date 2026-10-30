@@ -30,7 +30,7 @@ pnpm start     # Run the most recent build without rebuilding
 ## Workflow
 
 1. Open an MP4. Stride extracts every actual decoded video frame to a temporary disk cache. Short clips up to about 30 seconds at 1080p are the initial performance target.
-2. Set **Start frame** and **End frame**, numbered from **1**, both inclusive.
+2. Set **Start frame** and **End frame**, numbered from **1**, both inclusive. Adjusting either control pauses playback and previews that exact frame so you can line up the loop's endpoints. Press Play to preview the loop again.
 3. Optionally **Keep every Nth frame → Apply**. This replaces the selection within the range, anchored at its first frame. All/None also act only inside the range. Choices outside the range survive range changes.
 4. Click thumbnails to keep/skip frames. Hover and click the eye to inspect a frame without changing its selection. Inspection pauses playback; Play resumes the kept-frame loop.
 5. Adjust playback FPS (default 12). Space plays/pauses; left/right arrows step through kept frames when focus is outside controls. Fit and zoom affect the preview only.
