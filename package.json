@@ -1,0 +1,31 @@
+{
+  "name": "stride-frame-picker",
+  "productName": "Stride",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local walking-animation frame picker for macOS",
+  "type": "module",
+  "main": "dist-main/electron/main.js",
+  "packageManager": "pnpm@12.15.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.node.json && tsc -p tsconfig.json && vite build",
+    "start": "node scripts/launch.mjs",
+    "dev": "pnpm build && pnpm start",
+    "test": "pnpm build && node --test tests/*.test.mjs",
+    "test:ui": "pnpm build && node scripts/test-ui.mjs",
+    "test:package": "node scripts/test-package.mjs",
+    "package": "pnpm build && node scripts/package.mjs",
+    "setup": "node scripts/setup.mjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "electron": "^45.1.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}

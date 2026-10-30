@@ -1,0 +1,9 @@
+packages:
+  - .
+storeDir: .pnpm-store
+cacheDir: .cache/pnpm
+updateNotifier: false
+saveExact: true
+allowBuilds:
+  electron: false
+  esbuild: true

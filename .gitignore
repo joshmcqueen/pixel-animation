@@ -1,0 +1,8 @@
+node_modules/
+.pnpm-store/
+.cache/
+dist/
+dist-main/
+release/
+*.tsbuildinfo
+.DS_Store
